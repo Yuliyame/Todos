@@ -11,13 +11,6 @@ public class Epic extends Task {
         this.taskTwo = taskTwo;
         this.taskThree = taskThree;
     }
-
-    public static void SimpleTask (String[] args) {
-        String taskOne = "Open book";
-        String taskTwo = "Find chapter";
-        String TaskThree = "Read chapter";
-
-    }
     public String getTaskOne() {
         return taskOne;
     }

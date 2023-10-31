@@ -22,24 +22,6 @@ public class Todos {
     public Task[] findAll() {
         return tasks;
     }
-    public static void todos(String[] args) {
-        SimpleTask SimpleTask = new SimpleTask(
-                1,
-                "Make a home work"
-        );
-        Epic Epic = new Epic(
-                2,
-                "open book",
-                "find chapter",
-                "read a text"
-        );
-        Meeting Meeting = new Meeting(
-                3,
-                "How to make home work done",
-                "QA",
-                "October, 31, 2023"
-        );
-    }
 
 }
 

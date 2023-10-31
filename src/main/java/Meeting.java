@@ -10,12 +10,6 @@ public class Meeting extends Task {
         this.project = project;
         this.start = start;
     }
-    public static void SimpleTask (String[] args) {
-        String topic = "How to make home work done";
-        String project = "QA";
-        String start = "October, 31, 2023";
-
-    }
     public String getTopic() {
         return topic;
     }
