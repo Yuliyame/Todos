@@ -1,6 +1,5 @@
 public class Meeting extends Task {
-    private int id;
-    private  String topic;
+    private String topic;
     private String project;
     private String start;
 
@@ -10,14 +9,16 @@ public class Meeting extends Task {
         this.project = project;
         this.start = start;
     }
+
     public String getTopic() {
         return topic;
     }
+
     public String getProject() {
         return project;
     }
+
     public String getStart() {
         return start;
     }
 }
-

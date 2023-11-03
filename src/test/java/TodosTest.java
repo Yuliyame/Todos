@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
+import static org.junit.jupiter.api.Assertions.*;
 public class TodosTest {
     @Test
     public void shouldAddThreeTasksOfDifferentType() {
@@ -18,11 +18,11 @@ public class TodosTest {
 
         Todos todos = new Todos();
 
-        todos.add(SimpleTask);
-        todos.add(Epic);
-        todos.add(Meeting);
+        todos.add(simpleTask);
+        todos.add(epic);
+        todos.add(meeting);
 
-        Task[] expected = { SimpleTask, Epic, Meeting };
+        Task[] expected = { simpleTask, epic, meeting };
         Task[] actual = todos.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }

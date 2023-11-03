@@ -1,6 +1,13 @@
-public class Todos {
+public class Todos extends Task{
+    private Task[] tasks = new Task[0]; // <- тут будут все задачи
 
-    private Task[] tasks = new Task[0];
+    /**
+     * Вспомогательный метод для имитации добавления элемента в массив
+     * @param current Массив, в который мы хотим добавить элемент
+     * @param task Элемент, который мы хотим добавить
+     * @return Возвращает новый массив, который выглядит как тот, что мы передали,
+     * но с добавлением нового элемента в конец
+     */
     private Task[] addToArray(Task[] current, Task task) {
         Task[] tmp = new Task[current.length + 1];
         for (int i = 0; i < current.length; i++) {
@@ -9,19 +16,14 @@ public class Todos {
         tmp[tmp.length - 1] = task;
         return tmp;
     }
-    public void add(Task SimpleTask) {
-        tasks = addToArray(tasks, SimpleTask);
-    }
-    public void add(Task Epic) {
-        tasks = addToArray(tasks, Epic);
-    }
-
-    public void add(Task Meeting) {
-        tasks = addToArray(tasks, Meeting);
+    /**
+     * Метод добавления задачи в список дел
+     * @param task Добавляемая задача
+     */
+    public void add(Task task) { // <- вот здесь в параметре может лежать объект и вида SimpleTask, и вида Epic, и вида Meeting
+        tasks = addToArray(tasks, task);
     }
     public Task[] findAll() {
         return tasks;
     }
-
 }
-

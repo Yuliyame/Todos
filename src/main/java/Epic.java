@@ -1,25 +1,12 @@
 public class Epic extends Task {
+    private String[] subtasks;
 
-    private int id;
-    private String taskOne;
-    private String taskTwo;
-    private String taskThree;
-
-    public Epic(int id, String taskOne, String taskTwo, String taskThree) {
+    public Epic(int id, String[] subtasks) {
         super(id);
-        this.taskOne = taskOne;
-        this.taskTwo = taskTwo;
-        this.taskThree = taskThree;
+        this.subtasks = subtasks;
     }
-    public String getTaskOne() {
-        return taskOne;
-    }
-    public String getTaskTwo() {
-        return taskTwo;
-    }
-    public String getTaskThree() {
-        return taskThree;
+
+    public String[] getSubtasks() {
+        return subtasks;
     }
 }
-
-
