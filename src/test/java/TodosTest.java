@@ -28,7 +28,7 @@ public class TodosTest {
     }
 
     @Test
-    public void testWhenFewTasksFound() {
+    public void testWhenTwoTasksFound() {
         SimpleTask simpleTask = new SimpleTask(5,"Купить Хлеб");
 
         String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
